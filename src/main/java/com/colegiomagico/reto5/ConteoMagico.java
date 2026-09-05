@@ -1,15 +1,22 @@
 package com.colegiomagico.reto5;
 
-/**
- * Suma todos los números desde 1 hasta limite usando un ciclo while.
- */
 public class ConteoMagico {
 
     public static int contar(int limite) {
-        return 0; // TODO: Cambia esto
+        int suma = 0;
+        int numero = 1;
+
+        while (numero <= limite) {
+            System.out.println(numero);
+            suma += numero;
+            numero++;
+        }
+
+        return suma;
     }
 
     public static void main(String[] args) {
-        System.out.println("Conteo hasta 4: " + contar(4));
+        System.out.println("Conteo hasta 4:");
+        contar(4);
     }
 }
